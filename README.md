@@ -1,5 +1,8 @@
-# DQN Adventure: from Zero to State of the Art
+# DQN Adventure
 
+[pytorch官方中文教程](http://pytorch123.com/)
+
+## from Zero to State of the Art
 
 <img width="160px" height="22px" href="https://github.com/pytorch/pytorch" src="https://pp.userapi.com/c847120/v847120960/82b4/xGBK9pXAkw8.jpg">
 
@@ -18,18 +21,21 @@ The deep reinforcement learning community has made several independent improveme
   9. Hierarchical Deep Reinforcement Learning: Integrating Temporal Abstraction and Intrinsic Motivation  [[arxiv]](https://arxiv.org/abs/1604.06057) [[code]](https://github.com/higgsfield/RL-Adventure/blob/master/9.hierarchical%20dqn.ipynb)
   10. Neural Episodic Control [[arxiv]](https://arxiv.org/pdf/1703.01988.pdf) [[code]](#)
 
-# Environments
-First, I recommend to use small test problems to run experiments quickly. Then, you can continue on environments with large observation space. 
+## Environments
 
-  - **CartPole** - classic RL environment can be solved on a single cpu
-  - **Atari Pong** - the easiest atari environment, only takes ~ 1 million frames to converge, comparing with other atari games that take > 40 millions
-  - **Atari others** - change hyperparameters, target network update frequency=10K, replay buffer size=1M
+First, I recommend to use small test problems to run experiments quickly. Then, you can continue on environments with large observation space.
 
-# If you get stuck… 
+- **CartPole** - classic RL environment can be solved on a single cpu
+- **Atari Pong** - the easiest atari environment, only takes ~ 1 million frames to converge, comparing with other atari games that take > 40 millions
+- **Atari others** - change hyperparameters, target network update frequency=10K, replay buffer size=1M
+
+## If you get stuck…
+
 - Remember you are not stuck unless you have spent more than a week on a single algorithm. It is perfectly normal if you do not have all the required knowledge of mathematics and CS. For example, you will need knowledge of the fundamentals of measure theory and statistics, especially the [Wasserstein metric](https://en.wikipedia.org/wiki/Wasserstein_metric) and [quantile regression](https://en.wikipedia.org/wiki/Quantile_regression). Statistical inference: [importance sampling](https://en.wikipedia.org/wiki/Importance_sampling). Data structures: [Segment Tree](https://leetcode.com/tag/segment-tree/) and [K-dimensional Tree](https://en.wikipedia.org/wiki/K-d_tree).
 - Carefully go through the paper. Try to see what is the problem the authors are solving. Understand a high-level idea of the approach, then read the code (skipping the proofs), and after go over the mathematical details and proofs.
 
-# Best RL courses
+## Best RL courses
+
 - David Silver's course [link](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
 - Berkeley deep RL [link](http://rll.berkeley.edu/deeprlcourse/)
 - Practical RL [link](https://github.com/yandexdataschool/Practical_RL)
