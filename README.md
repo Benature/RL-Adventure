@@ -2,6 +2,27 @@
 
 [pytorch官方中文教程](http://pytorch123.com/)
 
+建议安装`jupyter notebook extention`, 并启用`Split Cell`插件.
+
+## 记录一些旧版报错信息
+
+1. volatile
+
+  ```log
+  UserWarning: volatile was removed and now has no effect. Use `with torch.no_grad():` instead.
+  ```
+
+  修改:
+
+  ```python
+  with torch.no_grad():
+      next_state = Variable(torch.FloatTensor(np.float32(next_state))) #, volatile=True)
+  ```
+
+2. `AttributeError: 'tuple' object has no attribute 'item'`
+
+`loss.data.item()`
+
 ## from Zero to State of the Art
 
 <img width="160px" height="22px" href="https://github.com/pytorch/pytorch" src="https://pp.userapi.com/c847120/v847120960/82b4/xGBK9pXAkw8.jpg">
